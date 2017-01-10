@@ -1,0 +1,90 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.tuoyuan {
+    width: 200px;
+    height: 150px;
+    border-radius: 100px / 75px;
+    background: #58a;
+}
+
+.bantuoyuan {
+    width: 200px;
+    height: 150px;
+    background: #58a;
+    border-radius: 50% / 100% 100% 0 0;
+}
+
+.zuobantuoyuan {
+    width: 200px;
+    height: 150px;
+    background: red;
+    border-radius: 100% 0 0 100% / 50%;
+}
+
+.youbantuoyuan {
+    width: 200px;
+    height: 150px;
+    background: #58a;
+    border-radius: 0 100% 100% 0 / 50%;
+}
+
+.sifenzhiyituoyuan {
+    width: 200px;
+    height: 150px;
+    border-radius: 100% 0 0 0;
+    background: #58a;
+}
+
+.pingxingsibian {
+    transform: skewX(-45deg);
+    background: greenyellow;
+    width: 100px;
+    height: 50px;
+}
+
+.pingxingsibian div {
+    transform: skewX(45deg);
+}
+
+.weiyuansupingxingsibian {
+    position: relative;
+}
+
+.weiyuansupingxingsibian::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    background: #58a;
+    transform: skew(-45deg);
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    height: 50px;
+}
+
+.lingxing {
+    width: 320px;
+    transform: rotate(45deg);
+    overflow: hidden;
+    margin: 80px;
+
+}
+
+.lingxing > img {
+    max-width: 100%;
+    transform: rotate(-45deg) scale(1.42);
+}
+
+.feizhengfanglingxing {
+    clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+    transform: 1s clip-path;
+}
+
+.feizhengfanglingxing:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
