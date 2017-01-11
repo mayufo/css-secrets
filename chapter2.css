@@ -24,121 +24,121 @@
 /*font-size: 2rem;*/
 /*}*/
 
-/*.touming-border {*/
-/*border: 10px solid hsla(0, 0%, 100%,.5);*/
-/*background: green;*/
-/*background-clip: padding-box;*/
-/*}*/
+.transparent-border {
+    border: 10px solid hsla(0, 0%, 100%, .5);
+    background: green;
+    background-clip: padding-box;
+}
 
-/*.tiaowenshuiping {*/
-    /*height: 900px;*/
-    /*width: 100%;*/
-    /*background: linear-gradient(#fb3 33.3%, #58a 0%, #58a 66.6%, yellowgreen 0);*/
+.horizontal-stripe {
+    height: 900px;
+    width: 100%;
+    background: linear-gradient(#fb3 33.3%, #58a 0%, #58a 66.6%, yellowgreen 0);
 
-/*}*/
+}
 
-/*.tiaowenchuizhi {*/
-    /*height: 900px;*/
-    /*width: 100%;*/
-    /*background: linear-gradient(to right, #fb3 50%, #58a 0);*/
-/*}*/
+.vertical-stripe {
+    height: 900px;
+    width: 100%;
+    background: linear-gradient(to right, #fb3 50%, #58a 0);
+}
 
-/*.qinxietiaowen {*/
-    /*height: 900px;*/
-    /*width: 100%;*/
-    /*background: linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);*/
+.fringe-stripe {
+    height: 900px;
+    width: 100%;
+    background: linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+    background-size: 30px 30px;
+}
+
+.multi-angle-stripe {
+    height: 900px;
+    width: 100%;
+    background: repeating-linear-gradient(45deg, #fb3, #fb3 15px, #58a 0, #58a 30px);
     /*background-size: 30px 30px;*/
-/*}*/
+}
 
-/*.xunhuantiaowen {*/
-    /*height: 900px;*/
-    /*width: 100%;*/
-    /*background: repeating-linear-gradient(45deg, #fb3, #fb3 15px, #58a 0, #58a 30px);*/
-    /*!*background-size: 30px 30px;*!*/
-/*}*/
+.gradient-fringe-stripe {
+    background: #58a;
+    background-image:repeating-linear-gradient(30deg,
+    hsla(0,0%,100%,.1), hsla(0,0%,100%,.1) 15px,
+    transparent 0, transparent 30px);
+    height: 900px;
+}
+.lattice {
+    background: white;
+    background-image: linear-gradient(90deg, rgba(2000, 0, 0,.5) 50%, transparent 0),
+    linear-gradient(rgba(200, 0, 0,.5) 50%, transparent 0);
+    background-size: 30px 30px;
+    height: 900px;
+}
+.auxiliary-line {
+    background: #58a;
+    background-image: linear-gradient(white 1px, transparent 0),
+    linear-gradient(90deg, white 1px, transparent 0);
+    background-size: 30px 30px;
+    height: 900px;
+}
+.wave-point {
+    background: #655;
+    background-image: radial-gradient(tan 30%, transparent 0),radial-gradient(tan 30%, transparent 0);
+    background-size: 30px 30px;
+    background-position: 0 0, 15px 15px;
+    height: 100vh;
+}
+.checkerboard {
+    background: #eee;
+    background-image:
+            linear-gradient(45deg, #bbb 25%, transparent 0),
+            linear-gradient(45deg,  transparent 75%, #bbb 0),
+            linear-gradient(45deg, #bbb 25%, transparent 0),
+            linear-gradient(45deg,  transparent 75%, #bbb 0);
+    background-size: 30px 30px;
+    background-position:
+            0 0, 15px 15px,
+            15px 15px, 30px 30px;
+    height: 100vh;
+}
 
-/*.linghuotiaowen {*/
-    /*background: #58a;*/
-    /*background-image:repeating-linear-gradient(30deg,*/
-    /*hsla(0,0%,100%,.1), hsla(0,0%,100%,.1) 15px,*/
-    /*transparent 0, transparent 30px);*/
-    /*height: 900px;*/
-/*}*/
-/*.gezi {*/
-    /*background: white;*/
-    /*background-image: linear-gradient(90deg, rgba(2000, 0, 0,.5) 50%, transparent 0),*/
-    /*linear-gradient(rgba(200, 0, 0,.5) 50%, transparent 0);*/
-    /*background-size: 30px 30px;*/
-    /*height: 900px;*/
-/*}*/
-/*.fuzhuxian {*/
-    /*background: #58a;*/
-    /*background-image: linear-gradient(white 1px, transparent 0),*/
-    /*linear-gradient(90deg, white 1px, transparent 0);*/
-    /*background-size: 30px 30px;*/
-    /*height: 900px;*/
-/*}*/
-/*.podian {*/
-    /*background: #655;*/
-    /*background-image: radial-gradient(tan 30%, transparent 0),radial-gradient(tan 30%, transparent 0);*/
-    /*background-size: 30px 30px;*/
-    /*background-position: 0 0, 15px 15px;*/
-    /*height: 100vh;*/
-/*}*/
-/*.qipan {*/
-    /*background: #eee;*/
-    /*background-image:*/
-            /*linear-gradient(45deg, #bbb 25%, transparent 0),*/
-            /*linear-gradient(45deg,  transparent 75%, #bbb 0),*/
-            /*linear-gradient(45deg, #bbb 25%, transparent 0),*/
-            /*linear-gradient(45deg,  transparent 75%, #bbb 0);*/
-    /*background-size: 30px 30px;*/
-    /*background-position:*/
-            /*0 0, 15px 15px,*/
-            /*15px 15px, 30px 30px;*/
-    /*height: 100vh;*/
-/*}*/
+.random-stripe-background {
+    background: hsl(20, 40%, 90%);
+    background-image:
+            linear-gradient(90deg, #fb3 11px, transparent 0),
+            linear-gradient(90deg, #ab4 23px, transparent 0),
+            linear-gradient(90deg, #655 23px, transparent 0);
+    background-size: 83px 100%, 61px 100%, 41px 100%;
+    height: 100vh;
+    width: 100vw;
+}
 
-/*.suijibeijing {*/
-    /*background: hsl(20, 40%, 90%);*/
-    /*background-image:*/
-            /*linear-gradient(90deg, #fb3 11px, transparent 0),*/
-            /*linear-gradient(90deg, #ab4 23px, transparent 0),*/
-            /*linear-gradient(90deg, #655 23px, transparent 0);*/
-    /*background-size: 83px 100%, 61px 100%, 41px 100%;*/
-    /*height: 100vh;*/
-    /*width: 100vw;*/
-/*}*/
+.continuous-pic-border {
+    background: url(image/m.jpeg);
+    background-size: cover;
+    padding: 1em;
+}
 
-/*.tupianbiankuang {*/
-    /*background: url(image/m.jpeg);*/
-    /*background-size: cover;*/
-    /*padding: 1em;*/
-/*}*/
+.continuous-pic-border div {
+    background: white;
+    padding: 1em;
+}
 
-/*.tupianbiankuang div {*/
-    /*background: white;*/
-    /*padding: 1em;*/
-/*}*/
+.multi-continuous-pic-border {
+    padding: 1em;
+    border: 1em solid transparent;
+    background:
+            linear-gradient(white, white) padding-box,
+            url(image/m.jpeg) border-box 0/cover;
+}
 
-/*.tupianbiankuang1 {*/
-    /*padding: 1em;*/
-    /*border: 1em solid transparent;*/
-    /*background:*/
-            /*linear-gradient(white, white) padding-box,*/
-            /*url(image/m.jpeg) border-box 0/cover;*/
-/*}*/
-
-/*.xinfeng {*/
-    /*padding: 1em;*/
-    /*border: 1em solid transparent;*/
-    /*background: linear-gradient(white, white) padding-box,*/
-    /*repeating-linear-gradient(-45deg, red 0, red 12.5%, transparent 0, transparent 25%, #58a 0, #58a 37.5%, transparent 0, transparent 50%) 0 /5em 5em;*/
-/*}*/
+.old-envelope {
+    padding: 1em;
+    border: 1em solid transparent;
+    background: linear-gradient(white, white) padding-box,
+    repeating-linear-gradient(-45deg, red 0, red 12.5%, transparent 0, transparent 25%, #58a 0, #58a 37.5%, transparent 0, transparent 50%) 0 /5em 5em;
+}
 
 @keyframes ants { to { background-position: 100% 100% } }
 
-.mayibian {
+.ants-line {
     padding: 1em;
     border: 1px solid transparent;
     background: linear-gradient(white, white) padding-box,

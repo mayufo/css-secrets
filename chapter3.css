@@ -3,57 +3,57 @@
     margin: 0;
 }
 
-.tuoyuan {
+.oval {
     width: 200px;
     height: 150px;
     border-radius: 100px / 75px;
     background: #58a;
 }
 
-.bantuoyuan {
+.half-oval {
     width: 200px;
     height: 150px;
     background: #58a;
     border-radius: 50% / 100% 100% 0 0;
 }
 
-.zuobantuoyuan {
+.left-half-oval {
     width: 200px;
     height: 150px;
     background: red;
     border-radius: 100% 0 0 100% / 50%;
 }
 
-.youbantuoyuan {
+.right-half-oval {
     width: 200px;
     height: 150px;
     background: #58a;
     border-radius: 0 100% 100% 0 / 50%;
 }
 
-.sifenzhiyituoyuan {
+.quarter-oval {
     width: 200px;
     height: 150px;
     border-radius: 100% 0 0 0;
     background: #58a;
 }
 
-.pingxingsibian {
+.parallelogram {
     transform: skewX(-45deg);
     background: greenyellow;
     width: 100px;
     height: 50px;
 }
 
-.pingxingsibian div {
+.parallelogram div {
     transform: skewX(45deg);
 }
 
-.weiyuansupingxingsibian {
+.pseudo-element-diamond {
     position: relative;
 }
 
-.weiyuansupingxingsibian::before {
+.pseudo-element-diamond::before {
     content: '';
     position: absolute;
     z-index: -1;
@@ -67,7 +67,7 @@
     height: 50px;
 }
 
-.lingxing {
+.square-diamond {
     width: 320px;
     transform: rotate(45deg);
     overflow: hidden;
@@ -75,16 +75,37 @@
 
 }
 
-.lingxing > img {
+.square-diamond > img {
     max-width: 100%;
     transform: rotate(-45deg) scale(1.42);
 }
 
-.feizhengfanglingxing {
+.no-square-diamond {
     clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
     transform: 1s clip-path;
 }
 
-.feizhengfanglingxing:hover {
+.no-square-diamond:hover {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }
+
+
+.cutting-angle {
+    background: #58a;
+    width: 100px;
+    height: 80px;
+    background: linear-gradient(-45deg, transparent 15px, #58a  0);
+}
+
+.double-cutting-angle {
+    background: #58a;
+    width: 200px;
+    height: 150px;
+    background:
+            linear-gradient(-45deg, transparent 15px, #58a 0) right,                                linear-gradient(45deg, transparent 15px, #58a 0) left;
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    margin: 20px;
+
+}
+
